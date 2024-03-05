@@ -1,38 +1,23 @@
-{{-- <form action="/post" method="POST">
-    @csrf
-
-    <p>Username</p>
-    <div>
-        <input type="text" name="username">
-    </div>
-    
-    <p>Password</p>
-    <div>
-        <input type="password" name="password">
-    </div>
-
-    <br>
-
-    <div>
-        <button type="submit">Login</button>
-    </div>
-</form> --}}
 <form action="/post" method="post">
     @csrf
 
-    <p>Username</p>
     <div>
-        <input type="text" name="username" value="{{ old('username') }}">
+        <p>Name</p>
+        <input type="text" name="name" >
     </div>
 
-    <p>Password</p>
     <div>
+        <p>Username</p>
+        <input type="text" name="username" >
+    </div>
+
+    <div>
+        <p>Password</p>
         <input type="password" name="password" >
     </div>
-
     <br>
 
     <div>
-        <button type="submit">Login</button>
+        <button type="submit">Register</button>
     </div>
 </form>
